@@ -26,5 +26,5 @@ All notable changes to this project will be documented in this file. This change
 ### Added
 - Files from the new template.
 
-[Unreleased]: https://github.com/your-name/fwm-spa/compare/0.1.1...HEAD
-[0.1.1]: https://github.com/your-name/fwm-spa/compare/0.1.0...0.1.1
+[Unreleased]: https://github.com/clartaq/fwm-spa-template/compare/0.1.1...HEAD
+[0.1.1]: https://github.com/clartaq/fwm-spa-tempate/compare/0.1.0...0.1.1
