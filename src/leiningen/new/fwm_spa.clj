@@ -83,7 +83,7 @@
                       ["resources/public/css/style.css" (render "style.css" data)]
                       ["resources/public/index.html" (render "index.html" data)]
                       ["resources/public/test.html" (render "test.html" data)]
-                      ["gitignore" (render ".gitignore" data)]
+                      [".gitignore" (render "gitignore" data)]
                       ["test/{{nested-dirs}}_test.cljs" (render "core_test.cljs" data)]
                       ["test/{{test-runner-dirs}}.cljs" (render "test_runner.cljs" data)]
                       ["scripts/clean.clj" (render "clean.clj" data)]
