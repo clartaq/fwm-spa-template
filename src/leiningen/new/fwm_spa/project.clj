@@ -12,8 +12,8 @@
 
   :source-paths ["src"]
 
-  :aliases {"fig"       [{{^windows?}}"trampoline" {{/windows?}}"run" "-m" "figwheel.main"]
-            "fig:build" [{{^windows?}}"trampoline" {{/windows?}}"run" "-m" "figwheel.main" "-b" "dev" "-r"]
+  :aliases {"fig:repl"       [{{^windows?}}"trampoline" {{/windows?}}"run" "-m" "figwheel.main" "-b" "dev" "-r"]
+            "fig:dev" [{{^windows?}}"trampoline" {{/windows?}}"run" "-m" "figwheel.main" "-b" "dev"]
             "fig:min"   ["run" "-m" "figwheel.main" "-O" "advanced" "-bo" "dev"]
             "fig:test"  ["run" "-m" "figwheel.main" "-co" "test.cljs.edn" "-m" "{{test-runner-ns}}"]}
 
@@ -21,5 +21,10 @@
                                   [com.bhauman/rebel-readline-cljs "0.1.4"]{{/windows?}}]
                    {{#deps?}}:resource-paths ["target"]
                    ;; need to add the compiled assets to the :clean-targets
-                   :clean-targets ^{:protect false} ["target"]{{/deps?}}}})
+                   :clean-targets ^{:protect false} ["target"
+                                                     "resources/public/main.out"
+                                                     "resources/public/test-main.out"
+                                                     "resources/public/main.js"
+                                                     "resources/public/test-main.js"
+                                                     "resources/public/main-auto-testing.js"]{{/deps?}}}})
 
