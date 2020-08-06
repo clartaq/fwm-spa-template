@@ -10,14 +10,10 @@ All notable changes to this project will be documented in this file. This change
 ### Added
 
 - Added "RELEASE" to `project.clj` so that `clj-new` would work.
-### Changed
-- Documentation on how to make the widgets.
-
-### Removed
-- `make-widget-sync` - we're all async, all the time.
 
 ### Fixed
 
+- Added the correct project name to the generated README.md.
 - Added the `.idea` directory to `.gitignore`.
 - Fixed generation of the `gitignore` file.
 - Expanded clean targets for `lein`based projects. widget maker to keep working when daylight savings switches over.
