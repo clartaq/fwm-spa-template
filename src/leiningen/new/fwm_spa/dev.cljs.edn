@@ -1,0 +1,7 @@
+^{:watch-dirs   ["test" "src"]
+  :css-dirs     ["resources/public/css"]
+  :auto-testing true
+  }
+{:main       {{namespace}}
+ :output-to  "resources/public/main.js"
+ :output-dir "resources/public/main.out"}

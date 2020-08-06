@@ -1,0 +1,106 @@
+/*
+** Add some style.
+*/
+
+:root {
+    /* Some colors. */
+    --heading-background-color: transparent;
+    --heading-color: #575757;
+    --body-background-color: #fcfcfc;
+    --body-text-color: #111111;
+    --rule-color: #ccc;
+
+    /* Fonts families. */
+    --headline-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --body-font-family: "EB Garamond", Georgia, serif;
+    --fixed-font-family: Consolas, Menlo, "Courier New", monospace;
+}
+
+html {
+    padding: 14px;
+}
+
+html, body {
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: var(--body-background-color);
+    color: var(--body-text-color);
+    font-family: var(--body-font-family);
+    font-weight: normal;
+    font-size: 1.2rem;
+    height: 100%;
+    line-height: 1.5rem;
+    padding: 0.15rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    background-color: var(--heading-background-color);
+    color: var(--heading-color);
+    font-family: var(--headline-font-family);
+    line-height: 1.3rem;
+    margin-bottom: 0.8rem;
+    margin-top: 1.25rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    padding-bottom: 0.4rem;
+}
+
+h2 {
+    border-bottom: var(--rule-color);
+    font-size: 1.728rem;
+    line-height: 2rem;
+    margin-top: 2.5rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+}
+
+h3 {
+    font-size: 1.44rem;
+    line-height: 1.6rem;
+    margin-top: 2.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+}
+
+h5 {
+    color: black;
+    font-size: 0.875rem;
+    margin-top: 2.5rem;
+}
+
+h6 {
+    font-size: 0.85rem;
+    margin-top: 2.5rem;
+}
+
+small {
+    font-size: 0.833rem;
+}
+
+code {
+    font-family: var(--fixed-font-family);
+    font-size: 1rem;
+}
+
+/*
+** If ClojureScript is inserting its app here, and the layout has flexbox
+** elements that are expected to occupy remaining height (think header,
+** main, footer where the main div pushes the footer to the bottom of the
+** page, you need to make sure the div maintains the chain of 100% height
+** elements.
+ */
+.app-div {
+    height: 100%;
+}
+

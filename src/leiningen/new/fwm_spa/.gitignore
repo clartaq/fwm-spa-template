@@ -1,0 +1,8 @@
+/.cpcache
+/.idea
+/resources/public/main.out/
+/resources/public/test-main.out/
+main.js
+main-auto-testing.js
+test-main.js
+.rebel_readline_history
