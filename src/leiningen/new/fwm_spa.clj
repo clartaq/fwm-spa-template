@@ -84,6 +84,7 @@
                       ["resources/public/index.html" (render "index.html" data)]
                       ["resources/public/test.html" (render "test.html" data)]
                       [".gitignore" (render "gitignore" data)]
+                      ["LICENSE.txt" (render "LICENSE" data)]
                       ["test/{{nested-dirs}}_test.cljs" (render "core_test.cljs" data)]
                       ["test/{{test-runner-dirs}}.cljs" (render "test_runner.cljs" data)]
                       ["scripts/clean.clj" (render "clean.clj" data)]

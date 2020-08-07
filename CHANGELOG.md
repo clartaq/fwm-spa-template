@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file. This change
 
 ## [Unreleased]
 
+### Added
+
+- License file in the project root.
+
+### Fixed
+
+- Typo in repository name in `project.clj`.
+
 ## [0.1.1] - 2020-08-06
 
 ### Added
